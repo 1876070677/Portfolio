@@ -4,21 +4,13 @@ services:
   frontend:
     build:
       context: ./frontend
-    networks:
-      - bridge
-      - portfolio
+    network_mode: bridge
     ports:
       - 5556:3000
   
   backend:
     build:
       context: ./backend
-    networks:
-      - bridge
-      - portfolio
+    network_mode: bridge
     ports:
       - 5557:5557
-
-networks:
-  portfolio:
-    driver: bridge
