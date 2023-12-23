@@ -1,0 +1,19 @@
+version: "3.0"
+
+services:
+  frontend:
+    container_name: portfolio_front
+    build:
+      context: ./frontend
+    container_name: trinity_frontend
+    network_mode: "bridge"
+    ports:
+      - 5556:3000
+  
+  backend:
+    container_name: portfolioAPI
+    build:
+      context: ./backend
+    network_mode: "bridge"
+    ports:
+      - 5557:5557
