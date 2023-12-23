@@ -4,8 +4,8 @@ services:
   frontend:
     build:
       context: ./frontend
-    container_name: trinity_frontend
     networks:
+      - bridge
       - portfolio
     ports:
       - 5556:3000
@@ -14,6 +14,7 @@ services:
     build:
       context: ./backend
     networks:
+      - bridge
       - portfolio
     ports:
       - 5557:5557
