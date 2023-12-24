@@ -11,6 +11,8 @@
 // export const GET_PORTFOLIO = "http://portfolioAPI:5557/portfolio"
 export const GET_ACTIVITY = "https://api.shbox.kr/act"
 export const GET_PORTFOLIO = "https://api.shbox.kr/portfolio"
+// export const GET_ACTIVITY = "http://localhost:5557/act"
+// export const GET_PORTFOLIO = "http://localhost:5557/portfolio"
 
 // export const GET_USER_INFO = "api:3007/userinfo";
 // export const REFRESH_TOKEN = "api:3007/refresh";
