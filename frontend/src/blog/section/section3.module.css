@@ -12,6 +12,10 @@
     border-radius: 30px;
 }
 
+a {
+    text-decoration-line: none;
+}
+
 .section_content {
     background-color: #fff;
     padding: 60px;
