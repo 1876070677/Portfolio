@@ -4,12 +4,12 @@ const express = require("express");
 const http = require('http');
 const app = express(); 
 // // //cors 모듈 불러오기
-// const cors = require('cors');
-// const corsOpts = {
-//     origin : ['http://localhost:9090', 'https://blog.shbox.kr', 'http://localhst:3000'],
-//     credentials : true
-// };
-// app.use(cors(corsOpts));
+const cors = require('cors');
+const corsOpts = {
+    origin : ['http://localhost:5556', 'https://blog.shbox.kr', 'http://localhost:3000'],
+    credentials : true
+};
+app.use(cors(corsOpts));
 app.use(express.json());
 
 const routerMapping = require('./mapping/router');
